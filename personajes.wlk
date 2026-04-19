@@ -13,8 +13,12 @@ import elementos.*
 // JUGADORES
 
 object luisa {
-  const personajeActivo = mario
+  var personajeActivo = null
   method aparece(_elemento) {personajeActivo.encontrar(_elemento)}
+  method asignarPersonaje(personaje){
+    personajeActivo = personaje
+    //Luisa no nace con ningún personaje activo, hay que asignarle uno.
+  }
 }
 
 // PERSONAJES
